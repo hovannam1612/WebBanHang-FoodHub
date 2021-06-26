@@ -1,0 +1,135 @@
+.title-cart {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.list-cart {
+    background-color: white;
+    padding: 10px;
+}
+
+    .list-cart table {
+        width: 100%;
+        text-align: center;
+    }
+
+        .list-cart table thead {
+            background-color: rgb(228, 227, 227);
+        }
+
+            .list-cart table thead th {
+                padding: 10px 20px;
+            }
+
+    .list-cart tbody img {
+        max-width: 150px;
+        max-height: 100px;
+    }
+
+    .list-cart thead th:first-child {
+        max-width: 150px;
+        width: 150px;
+        padding: 0;
+    }
+
+    .list-cart tbody tr td:first-child {
+        max-width: 150px;
+        max-height: 100px;
+        width: 150px;
+        padding: 0;
+    }
+
+    .list-cart tbody tr:nth-child(2n+2) {
+        background-color: rgb(228, 227, 227);
+    }
+
+    .list-cart tbody input[type=submit] {
+        margin: 0;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+        outline: 0;
+        border: 0;
+        background-color: rgb(182, 180, 180);
+        cursor: pointer;
+    }
+
+    .list-cart tbody input {
+        width: 30px;
+        height: 30px;
+        padding-left: 15px;
+    }
+
+    .list-cart tbody td:last-child a {
+        color: rgb(240, 92, 92);
+        font-size: 25px;
+    }
+
+        .list-cart tbody td:last-child a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+.cart-bill {
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+
+    .cart-bill .bill-content {
+        display: flex;
+        position: relative;
+    }
+
+        .cart-bill .bill-content div:first-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+    .cart-bill .buy {
+        margin-left: 950px;
+        padding: 10px 0;
+    }
+
+        .cart-bill .buy input[type=submit] {
+            padding: 15px 40px;
+            color: white;
+            background-color: rgb(250, 111, 86);
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+            .cart-bill .buy input[type=submit]:hover {
+                background-color: rgb(250, 73, 42);
+            }
+
+        .cart-bill .buy-more input[type=submit] {
+            padding: 15px 40px;
+            color: white;
+            background-color: forestgreen;
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+            .cart-bill .buy-more input[type=submit]:hover {
+                opacity: 1;
+            }
+
+            .cart-bill .buy-more{
+                display:flex;
+                justify-content:center;
+            }
+    .cart-bill .total-money{
+        color: red;
+        font-weight: 600;
+    }

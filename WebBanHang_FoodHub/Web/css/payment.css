@@ -1,0 +1,74 @@
+﻿.main-content {
+    display: flex;
+}
+
+    .main-content .dialog {
+        padding: 20px;
+        background-color: rgb(241, 241, 241);
+        margin: auto;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.dialog h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dialog .row {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+
+    .dialog .row:last-child {
+        margin: 0;
+    }
+
+    .dialog .row span {
+        display: block;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .dialog .row input[type=text] {
+        width: 400px;
+        height: 30px;
+        padding-left: 10px;
+        border-radius: 10px;
+        outline: 0;
+        border: 1px solid rgba(0, 0, 0, 0.19);
+    }
+.dialog .description textarea {
+    width: 400px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.dialog .row input[type=submit] {
+    padding: 10px 40px;
+    margin-left: 40px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    opacity: 0.8;
+}
+
+.dialog .row input[type=submit]:first-child {
+    background-color: tomato;
+    color: white;
+}
+
+.dialog .row input[type=submit]:last-child {
+    background-color: green;
+    color: white;
+}
+
+        .dialog .row input[type=submit]:hover {
+            opacity: 1;
+        }

@@ -1,0 +1,338 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B45A8B7-B806-4AC5-B74D-693132FFC2C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBanHang_FoodHub</RootNamespace>
+    <AssemblyName>WebBanHang_FoodHub</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44374</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\products\bachibomy.jpg" />
+    <Content Include="img\products\bachikhocucai.jpg" />
+    <Content Include="img\products\bachikhonuocdua.jpg" />
+    <Content Include="img\products\bachiquaygion.jpg" />
+    <Content Include="img\products\bachirangchaycanh.jpg" />
+    <Content Include="img\products\banhdacua.jpg" />
+    <Content Include="img\products\bittet.jpg" />
+    <Content Include="img\products\bocuonxa.jpg" />
+    <Content Include="img\products\bokhokhoaitay.jpg" />
+    <Content Include="img\products\bonuongvung.jpg" />
+    <Content Include="img\products\boxaocan.jpg" />
+    <Content Include="img\products\boxaoraumuong.jpg" />
+    <Content Include="img\products\boxaosuplo.jpg" />
+    <Content Include="img\products\bunkho.jpg" />
+    <Content Include="img\products\cabacma.jpg" />
+    <Content Include="img\products\cachep.jpg" />
+    <Content Include="img\products\caibaby.jpg" />
+    <Content Include="img\products\caiboxoi.jpg" />
+    <Content Include="img\products\caicuc.jpg" />
+    <Content Include="img\products\cakhotieu.jpg" />
+    <Content Include="img\products\canhga.jpg" />
+    <Content Include="img\products\canhgaKFC.jpg" />
+    <Content Include="img\products\canhgasotcay.jpg" />
+    <Content Include="img\products\canhgasotchuangot.jpg" />
+    <Content Include="img\products\caqua.jpg" />
+    <Content Include="img\products\carophi.jpg" />
+    <Content Include="img\products\carot.jpg" />
+    <Content Include="img\products\catim.jpg" />
+    <Content Include="img\products\catram.jpg" />
+    <Content Include="img\products\catre.jpg" />
+    <Content Include="img\products\changio.jpg" />
+    <Content Include="img\products\chomchom.jpg" />
+    <Content Include="img\products\chuoitieu.jpg" />
+    <Content Include="img\products\cuadong.jpg" />
+    <Content Include="img\products\cuahoangde.jpg" />
+    <Content Include="img\products\cucaitrang.jpg" />
+    <Content Include="img\products\download.png" />
+    <Content Include="img\products\duahau.jpg" />
+    <Content Include="img\products\duale.jpg" />
+    <Content Include="img\products\duaxiem.jpg" />
+    <Content Include="img\products\dudu.jpg" />
+    <Content Include="img\products\duiga.jpg" />
+    <Content Include="img\products\duigaKFC.jpg" />
+    <Content Include="img\products\duigarangmuoi.jpg" />
+    <Content Include="img\products\duigasotcay.jpg" />
+    <Content Include="img\products\duigaxaot.jpg" />
+    <Content Include="img\products\echomchuoi.jpg" />
+    <Content Include="img\products\gaboxoi.jpg" />
+    <Content Include="img\products\gaham.jpg" />
+    <Content Include="img\products\gahap.jpg" />
+    <Content Include="img\products\gakhomang.jpg" />
+    <Content Include="img\products\galuoc.jpg" />
+    <Content Include="img\products\ganguyencon.jpg" />
+    <Content Include="img\products\ganuongmatong.jpg" />
+    <Content Include="img\products\gungtuoi.jpg" />
+    <Content Include="img\products\hanhla.jpg" />
+    <Content Include="img\products\hanhtay.jpg" />
+    <Content Include="img\products\hatsen.jpg" />
+    <Content Include="img\products\hau.jpg" />
+    <Content Include="img\products\he.jpg" />
+    <Content Include="img\products\hen.jpg" />
+    <Content Include="img\products\hoahoi.jpg" />
+    <Content Include="img\products\khoailang.jpg" />
+    <Content Include="img\products\khoaitay.jpg" />
+    <Content Include="img\products\khoga.jpg" />
+    <Content Include="img\products\luonga.jpg" />
+    <Content Include="img\products\miendong.jpg" />
+    <Content Include="img\products\mucong.jpg" />
+    <Content Include="img\products\muctrung.jpg" />
+    <Content Include="img\products\muoiot.jpg" />
+    <Content Include="img\products\muoitieu.jpg" />
+    <Content Include="img\products\mysoi.jpg" />
+    <Content Include="img\products\na.jpg" />
+    <Content Include="img\products\nacvaibomy.jpg" />
+    <Content Include="img\products\nemchua.jpg" />
+    <Content Include="img\products\nemhaisan.jpg" />
+    <Content Include="img\products\nemtomthit.jpg" />
+    <Content Include="img\products\nghetuoi.jpg" />
+    <Content Include="img\products\nomboraumuong.jpg" />
+    <Content Include="img\products\nomdudu.jpg" />
+    <Content Include="img\products\nomgaxephay.jpg" />
+    <Content Include="img\products\nomrauma.jpg" />
+    <Content Include="img\products\nomraumuong.jpg" />
+    <Content Include="img\products\nomsua.jpg" />
+    <Content Include="img\products\nomtaiheo.jpg" />
+    <Content Include="img\products\nomxoai.jpg" />
+    <Content Include="img\products\nuocmamcacom.jpg" />
+    <Content Include="img\products\ocbien.jpg" />
+    <Content Include="img\products\oi.jpg" />
+    <Content Include="img\products\otchithien.jpg" />
+    <Content Include="img\products\otchuong.jpg" />
+    <Content Include="img\products\otsung.jpg" />
+    <Content Include="img\products\raucu.jpg" />
+    <Content Include="img\products\raudam.jpg" />
+    <Content Include="img\products\raumungtoi.jpg" />
+    <Content Include="img\products\ruoubakich.jpg" />
+    <Content Include="img\products\ruoumo.jpg" />
+    <Content Include="img\products\ruounep.jpg" />
+    <Content Include="img\products\ruousoju.jpg" />
+    <Content Include="img\products\ruoutrang.jpg" />
+    <Content Include="img\products\ruouvangdo.jpg" />
+    <Content Include="img\products\salad bò.jpg" />
+    <Content Include="img\products\san.jpg" />
+    <Content Include="img\products\so.jpg" />
+    <Content Include="img\products\sotmayonnaise.jpg" />
+    <Content Include="img\products\sotmechuangot.jpg" />
+    <Content Include="img\products\sotmetoiot.jpg" />
+    <Content Include="img\products\suachuauongProbi.jpg" />
+    <Content Include="img\products\suachuaviVinamilk.jpg" />
+    <Content Include="img\products\suafami.jpg" />
+    <Content Include="img\products\suagao.jpg" />
+    <Content Include="img\products\suahanhnhan.jpg" />
+    <Content Include="img\products\suaoccho.jpg" />
+    <Content Include="img\products\suatuoitiettrung.jpg" />
+    <Content Include="img\products\suhao.jpg" />
+    <Content Include="img\products\suongrimmam.jpg" />
+    <Content Include="img\products\suonheo.jpg" />
+    <Content Include="img\products\suonkhotieu.jpg" />
+    <Content Include="img\products\suonrimnuocdua.jpg" />
+    <Content Include="img\products\suonxaochuangot.jpg" />
+    <Content Include="img\products\suplo.jpg" />
+    <Content Include="img\products\taiheo.jpg" />
+    <Content Include="img\products\taomy.jpg" />
+    <Content Include="img\products\taoninhthuan.jpg" />
+    <Content Include="img\products\thanhlongdo.jpg" />
+    <Content Include="img\products\thanhlongtrang.jpg" />
+    <Content Include="img\products\thitbachi.jpg" />
+    <Content Include="img\products\thitbomieng.jpg" />
+    <Content Include="img\products\thitboxay.jpg" />
+    <Content Include="img\products\thitkhotieu.jpg" />
+    <Content Include="img\products\thitlonvai.jpg" />
+    <Content Include="img\products\tomhum.jpg" />
+    <Content Include="img\products\tomsu.jpg" />
+    <Content Include="img\products\tuongot.jpg" />
+    <Content Include="img\products\vitomsau.jpg" />
+    <Content Include="img\products\xa.jpg" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web\css\cart.css" />
+    <Content Include="Web\css\detail_product.css" />
+    <Content Include="Login\login.css" />
+    <Content Include="Web\css\signup.css" />
+    <Content Include="Web\css\payment.css" />
+    <Content Include="Web\css\style.css" />
+    <Content Include="Web\Home.aspx" />
+    <Content Include="img\appstore.png" />
+    <Content Include="img\ggplaystore.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="Web\ProductDetail.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataUtil\Connection.cs" />
+    <Compile Include="DataUtil\DataAccount.cs" />
+    <Compile Include="DataUtil\DataCategory.cs" />
+    <Compile Include="DataUtil\DataOrderDetail.cs" />
+    <Compile Include="DataUtil\DataOrderProduct.cs" />
+    <Compile Include="DataUtil\DataProduct.cs" />
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Cart.cs" />
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\OrderDetail.cs" />
+    <Compile Include="Model\OrderProduct.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebMaster.Master.cs">
+      <DependentUpon>WebMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebMaster.Master.designer.cs">
+      <DependentUpon>WebMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web\Cart.aspx" />
+    <Content Include="Web\Payment.aspx" />
+    <Content Include="Web\SignUp.aspx" />
+    <Content Include="Web\WebMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebMaster.master.cs" Inherits="WebBanHang_FoodHub.Web.WebMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <asp:ContentPlaceHolder ID="style" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="header">
+                <div class="top-header">
+                    <span><a href="Home.aspx">Vào cửa hàng FoodHub</a></span>
+                    <span class="header-span-right">
+                        <span><i class="fa fa-phone" aria-hidden="true"></i>0123134433</span>
+                        <span><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Liên hệ</a></span>
+                        <span>
+                            <asp:LinkButton runat="server" ID="lblLogin" OnClick="lblLogin_Click"><i class="fa fa-user" aria-hidden="true"></i>Đăng nhập</asp:LinkButton></span>
+                        <span>
+                            <asp:Literal ID="ltrUserName" runat="server"></asp:Literal></span>
+                        <span>
+                            <asp:LinkButton runat="server" ID="lblLogout" OnClick="lblLogout_Click">Đăng xuất</asp:LinkButton></span>
+                        <span>
+                            <asp:LinkButton runat="server" ID="lblSignUp" PostBackUrl="~/Web/SignUp.aspx">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký
+                            </asp:LinkButton>
+                        </span>
+                    </span>
+                </div>
+
+                <asp:ContentPlaceHolder ID="mainHeader" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <div class="content">
+                <%-----------Menu------------%>
+                <asp:ContentPlaceHolder ID="menuContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+                <%-----------Main-Content------------%>
+                <div class="main-content">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="main-footer">
+                    <div class="row customer-service">
+                        <h3>Chăm sóc khách hàng</h3>
+                        <ul>
+                            <li><a href="#">Trung tâm trợ giúp</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                        </ul>
+                    </div>
+                    <div class="row about-us">
+                        <h3>Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="#">Giới thiệu về foodHub</a></li>
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            <li><a href="#">Điều khoản chính sách</a></li>
+                        </ul>
+                    </div>
+                    <div class="row social-network">
+                        <h3>Mạng xã hội</h3>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="row app">
+                        <h3>Ứng dụng của cửa hàng</h3>
+                        <img src="../img/appstore.png" alt="" width="100px" height="50px">
+                        <img src="../img/ggplaystore.png" alt="" width="100px" height="50px">
+                    </div>
+
+                </div>
+                <div class="copy-right">
+                    <p>
+                        © 2021. Công ty cổ phần FoodHub Vietnam.
+                    Địa chỉ: Số 29, đường Hồ Tùng Mậu, Phường Mai Dịch, Quận Cầu Giấy,
+                    Thành phố Hà Nội. Điện thoại: 0888.30.15.18. Email: contact@foodhub.vn.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
